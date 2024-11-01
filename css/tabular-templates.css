@@ -1,0 +1,189 @@
+/* Table template styles for front end and admin preview. */
+
+/*
+ * BASE TEMPLATE
+ * ----------------------------------
+ */
+
+/* Currently no specific styles added for this template. */
+
+/*
+ * SIMPLE TEMPLATE
+ * ----------------------------------
+ */
+
+.tabular.simple-template {
+	border-collapse: collapse;
+	/*background: pink;*/
+}
+
+.tabular.simple-template th {
+	border-bottom: 1px solid #ddd;
+	/*text-align: left;*/
+}
+
+.tabular.simple-template td,
+.tabular.simple-template th {
+	text-align: left;
+	padding: 6px 8px;
+}
+
+.tabular.simple-template tr > td:first-child,
+.tabular.simple-template tr > th:first-child {
+	border-right: 1px solid #ddd;
+	/*text-align: left;*/
+	/*padding: 5px ;
+	background: hotpink;*/
+}
+
+/*
+ * BOX TEMPLATE
+ * ----------------------------------
+ */
+
+.tabular.box-template {
+	border-collapse: separate;
+}
+
+.tabular.box-template td,
+.tabular.box-template th {
+	border: 1px solid #ddd;
+	text-align: left;
+	padding: 8px;
+}
+
+/*
+ * COLOR BOX TEMPLATE
+ * ----------------------------------
+ */
+
+.tabular.color-box-template {
+	border-collapse: separate;
+	background: orange;
+}
+
+.tabular.color-box-template td,
+.tabular.color-box-template th {
+	border: 1px solid #DD8300;
+	text-align: left;
+	padding: 8px;
+	color: #fff;
+}
+
+/*
+ * BORDER TEMPLATE
+ * ----------------------------------
+ */
+
+.tabular.border-template {
+	border-collapse: collapse;
+}
+
+.tabular.border-template td,
+.tabular.border-template th {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+
+/*
+ * ZEBRA STRIPED 1 TEMPLATE
+ * ----------------------------------
+ */
+
+.tabular.zebra-1-template {
+	border-collapse: collapse;
+}
+
+.tabular.zebra-1-template td,
+.tabular.zebra-1-template th {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+
+.tabular.zebra-1-template thead tr:first-child { background-color: #ddd; }
+.tabular.zebra-1-template tr:nth-child(even)		{ background-color:#eee; }
+.tabular.zebra-1-template tr:nth-child(odd)		{ background-color:#fff; }
+.tabular.zebra-1-template td, .tabular.zebra-1-template th { border-color: #ddd; }
+.tabular.zebra-1-template th { border-color: #bbb; }
+
+/*
+ * ZEBRA STRIPED 2 TEMPLATE
+ * ----------------------------------
+ */
+
+.tabular.zebra-2-template {
+	border-collapse: collapse;
+}
+
+.tabular.zebra-2-template td,
+.tabular.zebra-2-template th {
+	text-align: left;
+	padding: 8px;
+	border: 1px solid #fff;
+}
+
+.tabular.zebra-2-template { font-size: 14px; }
+.tabular.zebra-2-template thead tr:first-child { background-color: #264d6e; color: #bb9f3f }
+.tabular.zebra-2-template tr:nth-child(even) { background-color:#92b9da; }
+.tabular.zebra-2-template tr:nth-child(odd)	{ background-color:#699fcd; }
+.tabular.zebra-2-template td { border-color: #ddd; color: #454545; }
+
+/*
+ * ZEBRA STRIPED 2 TEMPLATE
+ * ----------------------------------
+ */
+
+.tabular.zebra-3-template {
+	border-collapse: collapse;
+}
+
+.tabular.zebra-3-template td,
+.tabular.zebra-3-template th {
+	text-align: left;
+	padding: 8px;
+}
+
+.tabular.zebra-3-template { font-size: 14px; }
+.tabular.zebra-3-template thead tr:first-child { background-color: #264d6e; }
+.tabular.zebra-3-template tr:nth-child(even) { background-color:#92b9da; }
+.tabular.zebra-3-template tr:nth-child(odd)	{ background-color:#699fcd; }
+.tabular.zebra-3-template td { border-color: #ddd; color: #454545; }
+
+.tabular.zebra-3-template { font-family: tahoma; font-size: 14px; }
+.tabular.zebra-3-template { color: #114B5F; }
+.tabular.zebra-3-template { background: #88D498; border-radius: 8px; }
+.tabular.zebra-3-template td, table.tabular.t5 th { border: 0; }
+.tabular.zebra-3-template th { padding: 10px 12px; }
+.tabular.zebra-3-template td { padding: 10px 12px; }
+.tabular.zebra-3-template thead tr:first-child { background-color:#88D498; }
+.tabular.zebra-3-template tr:nth-child(odd) { background-color:#F3E9D2; }
+.tabular.zebra-3-template tr:nth-child(even) { background-color:#88D498; }
+
+/*
+ * ROW HOVER TEMPLATE
+ * ----------------------------------
+ */
+
+.tabular.row-hover-template { color: #7C6354; }
+table.tabular.row-hover-template td, table.tabular.row-hover-template th { border: 0; text-align: left; padding: 6px; }
+.tabular.row-hover-template { border-collapse: collapse; background: #E3E9C2; }
+table.tabular.row-hover-template tr {	border-bottom: 5px #F8FCDA solid; }
+table.tabular.row-hover-template tr:last-child {	border-bottom: 0; }
+table.tabular.row-hover-template thead { border-bottom: 5px #F8FCDA solid; }
+table.tabular.row-hover-template tr:hover {	background: #F8FCDA; }
+table.tabular.row-hover-template thead tr:hover {	background: none; }
+
+/*
+ * THICK BOX
+ * ----------------------------------
+ */
+
+.tabular.thick-box-template { border-collapse: collapse; }
+.tabular.thick-box-template td,
+.tabular.thick-box-template th {
+	border: 8px solid #ddd;
+	text-align: left;
+	padding: 8px ;
+}

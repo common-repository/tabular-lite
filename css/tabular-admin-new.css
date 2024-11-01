@@ -1,0 +1,93 @@
+/* Tabular Admin New Styles */
+
+/* Styles for creating new table only */
+
+.post-new-php #publish {
+	font-size: 16px;
+}
+
+#wpgo_tabular_cpt_data, #wpgo_tabular_cpt_js, #wpgo_tabular_cpt_config_js {
+	font-size: 15px;
+	font-family: courier;
+}
+
+#pc-create-table {
+	text-align: center;
+	margin: 20px;
+}
+
+#wpgo-tabular-type label > input[type=radio]:checked + div > img,
+#wpgo-tabular-template label > input[type=radio]:checked + div > img {
+	opacity: 1;
+	border: 2px rgba(213, 78, 33, 0.6) solid
+}
+
+#wpgo-tabular-type label > input[type=radio]:checked ~ div.pc-type-txt,
+#wpgo-tabular-template label > input[type=radio]:checked ~ div.pc-type-txt {
+	font-weight: bold;
+}
+
+#wpgo-tabular-type label > input[type=radio] + div > img,
+#wpgo-tabular-template label > input[type=radio] + div > img {
+	opacity: 0.5;
+	width: 200px;
+	height: 142px;
+	transition: 250ms all;
+	border: 2px #fff solid;
+}
+
+/* Hide the radio button controls */
+#wpgo-tabular-type input[type=radio],
+#wpgo-tabular-template input[type=radio] {
+	display: none;
+}
+
+#pc-type-container,
+#tabular-template-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.pc-type-img {
+	margin: 10px 10px 0 10px;
+}
+
+.pc-type-txt {
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 3px;
+}
+
+/* Table type meta box. */
+#wpgo-tabular-type {
+	display: block;
+}
+
+/* HIDE ELEMENTS */
+
+/* Hide all meta boxes by default */
+.meta-box-sortables > div.postbox {
+	display: none;
+}
+
+/* Hide 'Screen Options' tab */
+#screen-meta-links {
+	display: none;
+}
+
+/* Hide dotted box on right hand side */
+/* Note: when I add the info box on the right with links to pro, I may not need this. */
+#side-sortables {
+	display: none;
+}
+
+/* Hide title */
+#titlewrap {
+	display: none;
+}
+
+/* Reduce margin between table type metabox and title */
+#post-body-content {
+	margin-bottom: 5px;
+}

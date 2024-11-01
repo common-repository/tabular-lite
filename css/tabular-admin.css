@@ -1,0 +1,118 @@
+/* Tabular Admin Styles */
+
+/* Styles for existing tables only */
+
+.pc-control-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pc-control-container.layout label,.pc-control-container.legend label {
+	width: 130px;
+}
+
+.pc-control-container.layout input, .pc-control-container.legend input {
+	width: 120px;
+}
+
+/* show horizontal scroll bar when not enough space to show whole table preview */
+#wpgo-tabular-preview .inside {
+	overflow: auto;
+}
+
+/*
+ * TABLE TEMPLATE META BOX
+ */
+
+#wpgo-tabular-type label > input[type=radio]:checked + div > img,
+#wpgo-tabular-template label > input[type=radio]:checked + div > img {
+	opacity: 1;
+	border: 2px rgba(213, 78, 33, 0.6) solid
+}
+
+#wpgo-tabular-type label > input[type=radio]:checked ~ div.pc-type-txt,
+#wpgo-tabular-template label > input[type=radio]:checked ~ div.pc-type-txt {
+	font-weight: bold;
+}
+
+#wpgo-tabular-type label > input[type=radio] + div > img,
+#wpgo-tabular-template label > input[type=radio] + div > img {
+	opacity: 0.5;
+	/*width: 200px;
+	height: 142px;*/
+	width: 150px;
+	height: 106px;
+	transition: 250ms all;
+	border: 2px #ddd solid;
+}
+
+/* Hide the radio button controls */
+#wpgo-tabular-type input[type=radio],
+#wpgo-tabular-template input[type=radio] {
+	display: none;
+}
+
+#pc-type-container,
+#tabular-template-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.pc-type-img {
+	margin: 10px 10px 0 10px;
+}
+
+.pc-type-txt {
+	text-align:    center;
+	margin-bottom: 15px;
+	margin-top:    3px;
+}
+
+#wpgo-tabular-edit {
+	margin: 15px 0 0 5px;
+}
+
+/*
+ * HIDE ELEMENTS
+ */
+
+/* Hide the 'Status' and 'Visibility' rows in the Publish meta box. */
+#misc-publishing-actions .misc-pub-post-status, #misc-publishing-actions .misc-pub-visibility {
+	display: none;
+}
+
+/* Hide all meta boxes by default */
+.meta-box-sortables > div.postbox {
+	display: none;
+}
+
+/* Selectively display the meta boxes we need. */
+#submitdiv, #slugdiv, #authordiv, #wpgo-tabular-data, #wpgo-tabular-preview, #wpgo-tabular-layout, #wpgo-tabular-colors, #wpgo-tabular-legend, #wpgo-tabular-labels, #wpgo-tabular-series-colors, #wpgo-tabular-cpt_sc, #wpgo-tabular-template {
+	display: block;
+}
+
+/* Hide 'Screen Options' tab */
+#screen-meta-links {
+	display: none;
+}
+
+/* Tweak alignment of published date row */
+.misc-pub-section {
+	padding: 0px 10px 12px;
+}
+
+/* Hide color picker clear button manually. @todo need to find out why the color picker text boxes, and clear button aren't being hidden automatically via the color picker script. */
+.wp-picker-clear {
+	display: none !important;
+}
+
+input[type=text].wp-color-picker {
+	width: 155px !important;
+}
+
+.spinner {
+	float: none;
+	vertical-align: bottom;
+}
